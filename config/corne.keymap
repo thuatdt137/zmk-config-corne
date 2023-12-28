@@ -29,9 +29,9 @@
 
         Raise_layer {
             bindings = <
-&kp ESCAPE  &trans  &trans        &trans         &kp HOME        &kp PG_UP     &trans    &trans            &trans          &trans      &trans  &kp K_VOLUME_UP2
-&trans      &trans  &trans        &trans         &kp END         &kp PG_DN     &kp LEFT  &kp DOWN          &kp UP          &kp RIGHT   &trans  &kp K_MUTE2
-&trans      &trans  &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kp ESCAPE    &trans    &kp K_PLAY_PAUSE  &kp K_PREVIOUS  &kp K_NEXT  &trans  &kp K_VOLUME_DOWN2
+&kp ESCAPE  &trans  &trans        &trans         &kp HOME        &kp PG_UP     &trans    &trans            &trans          &trans      &trans  &kp C_VOLUME_UP
+&trans      &trans  &trans        &trans         &kp END         &kp PG_DN     &kp LEFT  &kp DOWN          &kp UP          &kp RIGHT   &trans  &kp K_MUTE
+&trans      &trans  &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kp ESCAPE    &trans    &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT  &trans  &kp C_VOLUME_DOWN
                                   &trans         &trans          &trans        &trans    &trans            &trans
             >;
         };
