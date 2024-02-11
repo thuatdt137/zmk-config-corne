@@ -32,9 +32,9 @@
             tapping-term-ms = <200>;
         };
 
-        layer_tap_plus: layer_tap_plus {
+        layer_tap_qt: layer_tap_qt {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_PLUS";
+            label = "LAYER_TAP_QT";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -43,9 +43,9 @@
             require-prior-idle-ms = <200>;
         };
 
-        modifier_tap: modifier_tap {
+        mod_tap_qt: mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
-            label = "MODIFIER_TAP";
+            label = "MOD_TAP_QT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -60,10 +60,10 @@
 
         Base_layer {
             bindings = <
-&kp GRAVE       &kp Q                 &kp W                 &kp E                     &kp R                        &kp T                           &kp Y                            &kp U                    &kp I                      &kp O                  &kp P                          &kp EQUAL
-&kp LEFT_SHIFT  &home_row LEFT_GUI A  &home_row LEFT_ALT S  &home_row LEFT_CONTROL D  &home_row LEFT_SHIFT F       &kp G                           &kp H                            &home_row RIGHT_SHIFT J  &home_row RIGHT_CONTROL K  &home_row RIGHT_ALT L  &home_row RIGHT_GUI SEMICOLON  &kp SINGLE_QUOTE
-&kp LCTRL       &kp Z                 &kp X                 &kp C                     &kp V                        &kp B                           &kp N                            &kp M                    &kp COMMA                  &kp PERIOD             &kp SLASH                      &kp MINUS
-                                                            &kp LGUI                  &layer_tap_plus 2 BACKSPACE  &modifier_tap LEFT_SHIFT TAB    &modifier_tap RIGHT_SHIFT ENTER  &layer_tap_plus 1 SPACE  &kp RIGHT_ALT
+&kp GRAVE       &kp Q                 &kp W                 &kp E                     &kp R                      &kp T                         &kp Y                          &kp U                    &kp I                      &kp O                  &kp P                          &kp EQUAL
+&kp LEFT_SHIFT  &home_row LEFT_GUI A  &home_row LEFT_ALT S  &home_row LEFT_CONTROL D  &home_row LEFT_SHIFT F     &kp G                         &kp H                          &home_row RIGHT_SHIFT J  &home_row RIGHT_CONTROL K  &home_row RIGHT_ALT L  &home_row RIGHT_GUI SEMICOLON  &kp SINGLE_QUOTE
+&kp LCTRL       &kp Z                 &kp X                 &kp C                     &kp V                      &kp B                         &kp N                          &kp M                    &kp COMMA                  &kp PERIOD             &kp SLASH                      &kp MINUS
+                                                            &kp LGUI                  &layer_tap_qt 2 BACKSPACE  &mod_tap_qt LEFT_SHIFT TAB    &mod_tap_qt RIGHT_SHIFT ENTER  &layer_tap_qt 1 SPACE    &kp RIGHT_ALT
             >;
         };
 
