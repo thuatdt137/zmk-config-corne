@@ -33,6 +33,7 @@
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <6 18 30 31 32 33 34 35 23 22 21 20 19 7 8 9 10 11 41 40 39 38 37 36>;
+            quick-tap-ms = <150>;
         };
 
         layer_tap_qt: layer_tap_qt {
@@ -69,6 +70,7 @@
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
+            quick-tap-ms = <150>;
         };
     };
 
