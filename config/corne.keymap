@@ -112,4 +112,13 @@
             >;
         };
     };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Config {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
 };
