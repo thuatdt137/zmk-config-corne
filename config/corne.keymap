@@ -80,8 +80,8 @@
             bindings = <
 &kp GRAVE       &kp Q                   &kp W                   &kp E                       &kp R                      &kp T                         &kp Y                          &kp U                      &kp I                        &kp O                    &kp P                            &kp EQUAL
 &kp LEFT_SHIFT  &home_row_l LEFT_GUI A  &home_row_l LEFT_ALT S  &home_row_l LEFT_CONTROL D  &home_row_l LEFT_SHIFT F   &kp G                         &kp H                          &home_row_r RIGHT_SHIFT J  &home_row_r RIGHT_CONTROL K  &home_row_r RIGHT_ALT L  &home_row_r RIGHT_GUI SEMICOLON  &kp SINGLE_QUOTE
-&kp LCTRL       &kp Z                   &kp X                   &kp C                       &kp V                      &kp B                         &kp N                          &kp M                      &kp COMMA                    &kp PERIOD               &kp SLASH                        &kp MINUS
-                                                                &kp LGUI                    &layer_tap_qt 2 BACKSPACE  &mod_tap_qt LEFT_SHIFT TAB    &mod_tap_qt RIGHT_SHIFT ENTER  &layer_tap_qt 1 SPACE      &kp RIGHT_ALT
+&kp LEFT_GUI    &kp Z                   &kp X                   &kp C                       &kp V                      &kp B                         &kp N                          &kp M                      &kp COMMA                    &kp PERIOD               &kp SLASH                        &kp MINUS
+                                                                &kp LEFT_CONTROL            &layer_tap_qt 2 BACKSPACE  &mod_tap_qt LEFT_SHIFT TAB    &mod_tap_qt RIGHT_SHIFT ENTER  &layer_tap_qt 1 SPACE      &kp RIGHT_ALT
             >;
         };
 
