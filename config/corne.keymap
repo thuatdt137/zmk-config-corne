@@ -107,18 +107,18 @@
 
         Config_layer {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &tog 4
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
 &none  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-&none  &bt BT_PRV    &bt BT_NXT    &none         &none         &bt BT_CLR      &none  &none  &none  &none  &none  &none
+&none  &bt BT_PRV    &bt BT_NXT    &none         &none         &bt BT_CLR      &none  &none  &none  &none  &none  &tog 4
                                    &none         &none         &none           &none  &none  &none
             >;
         };
 
         Gaming {
             bindings = <
-&kp ESC  &kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp N1         &kp N2       &kp N3     &kp N4   &kp N5    &tog 0
+&kp ESC  &kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp N1         &kp N2       &kp N3     &kp N4   &kp N5    &kp BACKSPACE
 &kp T    &kp LSHFT  &kp A  &kp S  &kp D     &kp F        &kp N6         &kp N7       &kp N8     &kp N9   &kp N0    &kp SQT
-&kp B    &kp LCTRL  &kp Z  &kp X  &kp C     &kp V        &kp PAGE_DOWN  &kp PAGE_UP  &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSPACE
+&kp B    &kp LCTRL  &kp Z  &kp X  &kp C     &kp V        &kp PAGE_DOWN  &kp PAGE_UP  &kp COMMA  &kp DOT  &kp FSLH  &tog 0
                            &kp G  &kp LALT  &kp SPACE    &kp RET        &kp RALT     &kp RSHFT
             >;
         };
