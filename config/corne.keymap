@@ -78,16 +78,16 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base_layer {
+        Base {
             bindings = <
-&kp GRAVE       &kp Q                   &kp W                   &kp E                       &kp R                      &kp T                         &kp Y                          &kp U                      &kp I                        &kp O                    &kp P                            &kp EQUAL
-&kp LEFT_SHIFT  &home_row_l LEFT_GUI A  &home_row_l LEFT_ALT S  &home_row_l LEFT_CONTROL D  &home_row_l LEFT_SHIFT F   &kp G                         &kp H                          &home_row_r RIGHT_SHIFT J  &home_row_r RIGHT_CONTROL K  &home_row_r RIGHT_ALT L  &home_row_r RIGHT_GUI SEMICOLON  &kp SINGLE_QUOTE
-&kp LEFT_GUI    &kp Z                   &kp X                   &kp C                       &kp V                      &kp B                         &kp N                          &kp M                      &kp COMMA                    &kp PERIOD               &kp SLASH                        &kp MINUS
-                                                                &kp LEFT_CONTROL            &layer_tap_qt 2 BACKSPACE  &mod_tap_qt LEFT_SHIFT TAB    &mod_tap_qt RIGHT_SHIFT ENTER  &layer_tap_qt 1 SPACE      &kp RIGHT_ALT
+&layer_tap_qt 5 GRAVE  &kp Q                   &kp W                   &kp E                       &kp R                      &kp T                         &kp Y                          &kp U                      &kp I                        &kp O                    &kp P                            &kp EQUAL
+&kp LEFT_SHIFT         &home_row_l LEFT_GUI A  &home_row_l LEFT_ALT S  &home_row_l LEFT_CONTROL D  &home_row_l LEFT_SHIFT F   &kp G                         &kp H                          &home_row_r RIGHT_SHIFT J  &home_row_r RIGHT_CONTROL K  &home_row_r RIGHT_ALT L  &home_row_r RIGHT_GUI SEMICOLON  &kp SINGLE_QUOTE
+&kp LEFT_GUI           &kp Z                   &kp X                   &kp C                       &kp V                      &kp B                         &kp N                          &kp M                      &kp COMMA                    &kp PERIOD               &kp SLASH                        &kp MINUS
+                                                                       &kp LEFT_CONTROL            &layer_tap_qt 2 BACKSPACE  &mod_tap_qt LEFT_SHIFT TAB    &mod_tap_qt RIGHT_SHIFT ENTER  &layer_tap_qt 1 SPACE      &kp RIGHT_ALT
             >;
         };
 
-        Lower_layer {
+        Lower {
             bindings = <
 &kp ESCAPE  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8     &kp NUMBER_9          &kp NUMBER_0           &trans
 &trans      &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT     &kp CARET     &kp AMPERSAND   &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
@@ -96,7 +96,7 @@
             >;
         };
 
-        Raise_layer {
+        Raise {
             bindings = <
 &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5           &kp F6    &kp F7            &kp F8          &kp F9      &kp F10  &kp C_VOLUME_UP
 &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP      &kp LEFT  &kp DOWN          &kp UP          &kp RIGHT   &kp F11  &kp K_MUTE
@@ -105,21 +105,39 @@
             >;
         };
 
-        Config_layer {
+        Config {
             bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
 &none  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-&none  &bt BT_PRV    &bt BT_NXT    &none         &none         &bt BT_CLR      &none  &none  &none  &none  &none  &tog 4
+&none  &bt BT_PRV    &bt BT_NXT    &none         &none         &bt BT_CLR      &none  &none  &none  &none  &none  &none
                                    &none         &none         &none           &none  &none  &none
             >;
         };
 
         Gaming {
             bindings = <
-&kp ESC  &kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp N1         &kp N2       &kp N3     &kp N4   &kp N5    &kp BACKSPACE
-&kp T    &kp LSHFT  &kp A  &kp S  &kp D     &kp F        &kp N6         &kp N7       &kp N8     &kp N9   &kp N0    &kp SQT
-&kp B    &kp LCTRL  &kp Z  &kp X  &kp C     &kp V        &kp PAGE_DOWN  &kp PAGE_UP  &kp COMMA  &kp DOT  &kp FSLH  &tog 0
-                           &kp G  &kp LALT  &kp SPACE    &kp RET        &kp RALT     &kp RSHFT
+&layer_tap_qt 6 ESC  &kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp N1         &kp N2       &kp N3     &kp N4   &kp N5    &kp BACKSPACE
+&kp T                &kp LSHFT  &kp A  &kp S  &kp D     &kp F        &kp N6         &kp N7       &kp N8     &kp N9   &kp N0    &kp SQT
+&kp B                &kp LCTRL  &kp Z  &kp X  &kp C     &kp V        &kp PAGE_DOWN  &kp PAGE_UP  &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
+                                       &kp G  &kp LALT  &kp SPACE    &kp RET        &kp RALT     &kp RSHFT
+            >;
+        };
+
+        To_Gaming {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &tog 4
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        From_Gaming {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &tog 0
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
