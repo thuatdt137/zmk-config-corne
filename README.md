@@ -31,4 +31,4 @@ Mapping for EP_ON & EP_OFF in case of OLED issue on ZMK
 &ext_power EP_OFF
 ```
 
-Then flash the firmware, click `EP_OFF` and `EP_ON` on the keyboard, then click `Reset` on the keyboard. The OLED should be back to normal. If not, try to flash the firmware again.
+Then flash the firmware, click `EP_OFF` and `EP_ON` on the keyboard, then click `Reset` on the keyboard. The OLED should be back to normal. If not, try to flash the firmware again
